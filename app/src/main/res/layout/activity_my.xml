@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity">
+
+    <TextView
+        android:id="@+id/title1"
+        android:text="Enter the details"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_above="@+id/source"
+        android:layout_marginBottom="20dp"/>
+<EditText
+    android:id="@+id/nodes"
+    android:hint="nodes"
+    android:layout_width="100dp"
+    android:layout_height="40dp"
+    android:inputType="number"
+ android:layout_alignBaseline="@+id/source"
+    android:layout_toLeftOf="@+id/source"/>
+    <EditText
+        android:id="@+id/source"
+        android:layout_width="100dp"
+        android:hint="source"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+         />
+    <EditText
+        android:id="@+id/sink"
+        android:layout_width="100dp"
+        android:hint="sink"
+        android:layout_height="40dp"
+        android:inputType="number"
+       android:layout_below="@+id/title1"
+        android:layout_alignBaseline="@+id/source"
+        android:layout_toRightOf="@+id/source"/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/source"
+    android:layout_marginTop="20dp"
+    android:id="@+id/next"
+    android:layout_centerHorizontal="true"
+    android:text="Next"
+    android:textColor="@android:color/background_light"
+    android:background="@android:drawable/dialog_holo_dark_frame"/>
+</RelativeLayout>
